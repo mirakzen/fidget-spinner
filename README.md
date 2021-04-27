@@ -1,10 +1,17 @@
-# fidget-spinner
-A virtual fidget spinner made in Javascript.
-# How to use
-- Drag the mouse to make it spin.
-- The greater the speed of the drag, the greater the spining speed of the spinner.
-- Demo: https://hackinet.github.io/fidget-spinner/
-# UPDATES
-- You can see current speed of the fidget spinner.
-- You can set a custom speed for the fidget spinner.
-- For all the lazy people who don't want to drag their mouse. Added a button, click it to spin it.
+# Fidget Spinner
+
+A virtual fidget spinner made in pure Javascript (without jQuery).
+
+This is modified fork of [Hackinet fidget spinner](https://github.com/Hackinet/fidget-spinner) with the following changes:
+* Remove everytime rendering - now it requests animation frame rendering only then try to move spinner;
+* Remove setting speed and spin-button;
+* Limited maximum speed;
+* Connected mouse move angle to spinner angle;
+* Centered spinner on the page;
+* Recolor background and spinner + modify spinner;
+* Added image-link.
+
+Planned improvements:
+* Touch support (because original implementation doesn't work);
+* Change drawing spinner on every frame to rotating svg spinner ([for example](https://thenounproject.com/term/fidget-spinner/1077097/));
+* Changing colors support (maybe just for fun).
